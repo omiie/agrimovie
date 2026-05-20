@@ -10,6 +10,9 @@ footer();
 navbar();
 strip();
 const daftarHero = {
+  "index.html":{
+    title:"Gaada",
+  },
   "about.html": {
     title: "About",
   },
