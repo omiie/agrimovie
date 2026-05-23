@@ -53,7 +53,7 @@ hero.innerHTML = `
             "
           >
             ${title} <br />
-            <span class="text-green-lt">Aggrimovie</span><br />
+            <span class="text-green-lt">Agrimovie</span><br />
           </h1>
         </div>
     </section>`

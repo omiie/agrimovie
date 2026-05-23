@@ -81,17 +81,7 @@ hero(halaman.title);
         });
 
         /* ── Film tab filter ── */
-        function filterFilm(btn, genre) {
-            document.querySelectorAll('[onclick^="filterFilm"]').forEach(b => {
-                b.className = 'inline-flex items-center gap-2 font-body text-[11px] font-bold tracking-widest6 uppercase px-[18px] py-2 rounded-[3px] cursor-pointer bg-dark2 text-white border-[1.5px] border-border hover:border-green hover:text-green-lt transition-all duration-300';
-            });
-            btn.className = 'inline-flex items-center gap-2 font-body text-[11px] font-bold tracking-widest6 uppercase px-[18px] py-2 rounded-[3px] cursor-pointer bg-green text-white hover:bg-green-lt hover:-translate-y-0.5 hover:shadow-green-btn transition-all duration-300';
-
-            const cards = document.querySelectorAll('.film-card');
-            cards.forEach(card => {
-                card.style.display = (genre === 'all' || card.dataset.genre === genre) ? '' : 'none';
-            });
-        }
+        
 
         /* ── Navbar active on scroll ── */
         const sections = document.querySelectorAll('section[id]');

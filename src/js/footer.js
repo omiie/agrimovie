@@ -46,14 +46,10 @@ const activeSub = (pageName) =>{
 
                 <!-- About -->
                 <div>
-                    <h4 class="text-[10px] font-extrabold tracking-[0.2em] uppercase text-green-lt mb-[18px]">About</h4>
+                    <h4 class="text-[10px] font-extrabold tracking-[0.2em] uppercase text-green-lt mb-[18px]">Tentang</h4>
                     <ul class="list-none">
                         <li class="mb-[10px]"><a href="about.html" class="${activeSub('about.html')} text-[13px] ">
-                        About Us</a></li>
-                        <li class="mb-[10px]"><a href="aboutVisi.html" class="${activeSub('aboutVisi.html')} text-[13px]">
-                        Visi &amp; Misi</a></li>
-                        <li class="mb-[10px]"><a href="#struktur" class=" ${activeSub('aboutStruktur.html')} text-[13px]">
-                        Struktur Kepengurusan</a></li>
+                        Tentang Kami</a></li>
                     </ul>
                 </div>
 
@@ -62,35 +58,26 @@ const activeSub = (pageName) =>{
                     <h4 class="text-[10px] font-extrabold tracking-[0.2em] uppercase text-green-lt mb-[18px]">Films
                         &amp; Galeri</h4>
                     <ul class="list-none">
-                        <li class="mb-[10px]"><a href="#films" class="${activeSub('filmAll.html')} text-[13px] ">Semua Film</a>
+                        <li class="mb-[10px]"><a href="filmAll.html" class="${activeSub('filmAll.html')} text-[13px] ">Film</a>
                         </li>
-                        <li class="mb-[10px]"><a href="#films-pendek" class="${activeSub('filmBesar.html')} text-[13px] ">
-                        Film Besar</a></li>
-                        <li class="mb-[10px]"><a href="#films-pendek" class="${activeSub('filmPendek.html')} text-[13px] ">
-                        Film Pendek</a></li>
-                        <li class="mb-[10px]"><a href="#films-dokumenter" class="${activeSub('filmDokumenter.html')} text-[13px] ">Film Dokumenter</a></li>
-                        <li class="mb-[10px]"><a href="#films-bts" class="${activeSub('filmBts.html')} text-[13px] ">
-                        Behind The Scene</a></li>
-                        <li class="mb-[10px]"><a href="#films-achievement" class="${activeSub('filmAchievement.html')} text-[13px] ">
-                                Achievement</a></li>
+                       <li class="mb-[10px]"><a href="filmBts.html" class="${activeSub('filmBts.html')} text-[13px] ">
+                        Dibalik Layar</a></li>
+                        <li class="mb-[10px]"><a href="filmAchievement.html" class="${activeSub('filmAchievement.html')} text-[13px] ">
+                        Pencapaian</a></li>
                     </ul>
                 </div>
-
-                <!-- Join & Contact -->
+                
+                <!-- Event -->
                 <div>
-                    <h4 class="text-[10px] font-extrabold tracking-[0.2em] uppercase text-green-lt mb-[18px]">Join Us
-                    </h4>
+                    <h4 class="text-[10px] font-extrabold tracking-[0.2em] uppercase text-green-lt mb-[18px]">Event</h4>
                     <ul class="list-none">
-                        <li class="mb-[10px]"><a href="mailto:agrimovie@apps.ipb.ac.id"
-                                class="text-[13px] text-muted footer-link">Email Kami</a></li>
-                        <li class="mb-[10px]"><a href="#events" class="${activeSub('eventUpcoming.html')} text-[13px] ">Upcoming
-                                Events</a></li>
-                        <li class="mb-[10px]"><a href="#program" class="${activeSub('eventProgram.html')} text-[13px] ">Program
-                                &amp; Workshop</a></li>
-                        <li class="mb-[10px]"><a href="#" class="text-[13px] text-muted footer-link">Instagram</a></li>
-                        <li class="mb-[10px]"><a href="#" class="text-[13px] text-muted footer-link">YouTube</a></li>
+                        <li class="mb-[10px]"><a href="#events" class="${activeSub('eventUpcoming.html')} text-[13px] ">
+                                Event Mendatang</a></li>
+                        <li class="mb-[10px]"><a href="#program" class="${activeSub('eventProgram.html')} text-[13px] ">
+                        Program</a></li>
                     </ul>
                 </div>
+                
             </div>
 
             <div
