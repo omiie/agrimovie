@@ -11,12 +11,15 @@ navbar();
 strip();
 const daftarHero = {
   "index.html":{
-    title:"Gaada",
+    title:"Kosong",
   },
   "about.html": {
     title: "About",
   },
   "aboutVisi.html": {
+    title: "About",
+  },
+  "aboutStruktur.html": {
     title: "About",
   },
   "filmAll.html": {
