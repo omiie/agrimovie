@@ -14,37 +14,37 @@ const daftarHero = {
     title:"Kosong",
   },
   "about.html": {
-    title: "About",
+    title: "Tentang",
   },
   "aboutVisi.html": {
-    title: "About",
+    title: "Tentang",
   },
   "aboutStruktur.html": {
-    title: "About",
+    title: "Tentang",
   },
   "filmAll.html": {
-    title: "Galeri",
+    title: "Film",
   },
   "filmBesar.html": {
-    title: "Galeri",
+    title: "Film",
   },
   "filmPendek.html": {
-    title: "Galeri",
+    title: "Film",
   },
   "filmBts.html": {
-    title: "Galeri",
+    title: "Film",
   },
   "filmDokumenter.html": {
-    title: "Galeri",
+    title: "Film",
   },
   "filmAchievement.html": {
-    title: "Galeri",
+    title: "Pencapaian",
   },
   "eventProgram.html": {
-    title: "Event",
+    title: "Program",
   },
   "eventUpcoming.html": {
-    title: "Event",
+    title: "Acara",
   },
 };
 const halaman = daftarHero[path] || daftarHero['index.html']

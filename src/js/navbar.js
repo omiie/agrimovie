@@ -54,7 +54,7 @@ navbar.innerHTML = `
                             Semua Film</a>
                         <a href="filmBts.html"
                             class="${activeSub('filmBts.html')} block px-[18px] py-[10px] text-[13px] font-medium border-b border-white/[0.04]  hover:bg-[rgba(42,154,60,0.1)] hover:pl-6 transition-all duration-300">
-                            Dibalik Layar</a>
+                            Di Balik Layar</a>
                         <a href="filmAchievement.html"
                             class="${activeSub('filmAchievement.html')} block px-[18px] py-[10px] text-[13px] font-medium rounded-b-[6px]               hover:bg-[rgba(42,154,60,0.1)] hover:pl-6 transition-all duration-300">
                             Pencapaian</a>
@@ -65,7 +65,7 @@ navbar.innerHTML = `
                 <li class="relative has-dropdown">
                     <button
                         class="${active(['eventUpcoming.html', 'eventProgram.html'])} flex items-center gap-[5px] px-[14px] py-2 font-body text-[13px] font-semibold tracking-widest7 uppercase border-none cursor-pointer rounded hover:text-green-lt hover:bg-green-dim transition-all duration-300 whitespace-nowrap">
-                        Event
+                        Acara
                         <svg class="chevron w-[10px] h-[10px] fill-none stroke-current stroke-[2.5] transition-transform duration-300"
                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" d="M19 9l-7 7-7-7" />
@@ -75,7 +75,7 @@ navbar.innerHTML = `
                         class="dropdown absolute top-[calc(100%+8px)] left-0 min-w-[200px] bg-dark2 border border-border border-t-2 border-t-green rounded-b-lg shadow-dropdown opacity-0 invisible -translate-y-2 transition-all duration-200 z-[200]">
                         <a href="eventUpcoming.html"
                             class="${activeSub('eventUpcoming.html')} block px-[18px] py-[10px] text-[13px] font-medium border-b border-white/[0.04]  hover:bg-[rgba(42,154,60,0.1)] hover:pl-6 transition-all duration-300">
-                            Event Mendatang</a>
+                            Acara Mendatang</a>
                         <a href="eventProgram.html"
                             class="${activeSub('eventProgram.html')} block px-[18px] py-[10px] text-[13px] font-medium rounded-b-[6px]               hover:bg-[rgba(42,154,60,0.1)] hover:pl-6 transition-all duration-300">
                             Program</a>
@@ -110,7 +110,7 @@ navbar.innerHTML = `
             class="${activeSub('filmAll.html')} block py-[10px] text-[14px] font-semibold tracking-[0.06em] uppercase border-b border-border">Films
             &amp; Galeri</a>
         <a href="eventUpcoming.html"
-            class="${activeSub('eventUpcoming.html')} block py-[10px] text-[14px] font-semibold tracking-[0.06em] uppercase border-b border-border">Event</a>
+            class="${activeSub('eventUpcoming.html')} block py-[10px] text-[14px] font-semibold tracking-[0.06em] uppercase border-b border-border">Acara & Program</a>
         <a href="eventProgram.html"
             class="${activeSub('eventProgram.html')} block py-[10px] text-[14px] font-semibold tracking-[0.06em] uppercase border-b border-border">Program</a>
         <a href="#join-us"

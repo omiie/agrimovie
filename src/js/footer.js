@@ -69,10 +69,10 @@ const activeSub = (pageName) =>{
                 
                 <!-- Event -->
                 <div>
-                    <h4 class="text-[10px] font-extrabold tracking-[0.2em] uppercase text-green-lt mb-[18px]">Event</h4>
+                    <h4 class="text-[10px] font-extrabold tracking-[0.2em] uppercase text-green-lt mb-[18px]">Acara & Program</h4>
                     <ul class="list-none">
                         <li class="mb-[10px]"><a href="#events" class="${activeSub('eventUpcoming.html')} text-[13px] ">
-                                Event Mendatang</a></li>
+                                Acara Mendatang</a></li>
                         <li class="mb-[10px]"><a href="#program" class="${activeSub('eventProgram.html')} text-[13px] ">
                         Program</a></li>
                     </ul>
