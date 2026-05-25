@@ -54,13 +54,13 @@ navbar.innerHTML = `
                     <div
                         class="dropdown absolute top-[calc(100%+8px)] left-0 min-w-[200px] bg-dark2 border border-border border-t-2 border-t-green rounded-b-lg shadow-dropdown opacity-0 invisible -translate-y-2 transition-all duration-200 z-[200]">
                         <a href="filmAll.html"
-                            class="${activeSub('filmAll.html' || 'filmall')} block px-[18px] py-[10px] text-[13px] font-medium border-b border-white/[0.04]  hover:bg-[rgba(42,154,60,0.1)] hover:pl-6 transition-all duration-300">
+                            class="${activeSub(['filmAll.html' , 'filmall'])} block px-[18px] py-[10px] text-[13px] font-medium border-b border-white/[0.04]  hover:bg-[rgba(42,154,60,0.1)] hover:pl-6 transition-all duration-300">
                             Semua Film</a>
                         <a href="filmBts.html"
-                            class="${activeSub('filmBts.html' || 'filmbts')} block px-[18px] py-[10px] text-[13px] font-medium border-b border-white/[0.04]  hover:bg-[rgba(42,154,60,0.1)] hover:pl-6 transition-all duration-300">
+                            class="${activeSub(['filmBts.html' , 'filmbts'])} block px-[18px] py-[10px] text-[13px] font-medium border-b border-white/[0.04]  hover:bg-[rgba(42,154,60,0.1)] hover:pl-6 transition-all duration-300">
                             Di Balik Layar</a>
                         <a href="filmAchievement.html"
-                            class="${activeSub('filmAchievement.html' || 'filmachievement')} block px-[18px] py-[10px] text-[13px] font-medium rounded-b-[6px]               hover:bg-[rgba(42,154,60,0.1)] hover:pl-6 transition-all duration-300">
+                            class="${activeSub(['filmAchievement.html' , 'filmachievement'])} block px-[18px] py-[10px] text-[13px] font-medium rounded-b-[6px]               hover:bg-[rgba(42,154,60,0.1)] hover:pl-6 transition-all duration-300">
                             Pencapaian</a>
                     </div>
                 </li>
@@ -78,10 +78,10 @@ navbar.innerHTML = `
                     <div
                         class="dropdown absolute top-[calc(100%+8px)] left-0 min-w-[200px] bg-dark2 border border-border border-t-2 border-t-green rounded-b-lg shadow-dropdown opacity-0 invisible -translate-y-2 transition-all duration-200 z-[200]">
                         <a href="eventUpcoming.html"
-                            class="${activeSub('eventUpcoming.html'||'eventupcoming')} block px-[18px] py-[10px] text-[13px] font-medium border-b border-white/[0.04]  hover:bg-[rgba(42,154,60,0.1)] hover:pl-6 transition-all duration-300">
+                            class="${activeSub(['eventUpcoming.html','eventupcoming'])} block px-[18px] py-[10px] text-[13px] font-medium border-b border-white/[0.04]  hover:bg-[rgba(42,154,60,0.1)] hover:pl-6 transition-all duration-300">
                             Acara Mendatang</a>
                         <a href="eventProgram.html"
-                            class="${activeSub('eventProgram.html' || 'eventprogram')} block px-[18px] py-[10px] text-[13px] font-medium rounded-b-[6px]               hover:bg-[rgba(42,154,60,0.1)] hover:pl-6 transition-all duration-300">
+                            class="${activeSub(['eventProgram.html' , 'eventprogram'])} block px-[18px] py-[10px] text-[13px] font-medium rounded-b-[6px]               hover:bg-[rgba(42,154,60,0.1)] hover:pl-6 transition-all duration-300">
                             Program</a>
                     </div>
                 </li>
