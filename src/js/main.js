@@ -53,34 +53,19 @@ const daftarHero = {
   "about": {
     title: "Tentang",
   },
-  "aboutVisi": {
-    title: "Tentang",
-  },
-  "aboutStruktur": {
-    title: "Tentang",
-  },
-  "filmAll": {
+  "filmall": {
     title: "Film",
   },
-  "filmBesar": {
+  "filmbts": {
     title: "Film",
   },
-  "filmPendek": {
-    title: "Film",
-  },
-  "filmBts": {
-    title: "Film",
-  },
-  "filmDokumenter": {
-    title: "Film",
-  },
-  "filmAchievement": {
+  "filmachievement": {
     title: "Pencapaian",
   },
-  "eventProgram": {
+  "eventprogram": {
     title: "Program",
   },
-  "eventUpcoming": {
+  "eventupcoming": {
     title: "Acara",
   },
 };
