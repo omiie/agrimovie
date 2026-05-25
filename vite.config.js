@@ -14,6 +14,11 @@ export default defineConfig({
         filmAll: resolve(__dirname, 'filmAll.html'),
         filmBts: resolve(__dirname, 'filmBts.html'),
       },
+      output: {
+        assetFileNames: 'assets/[name][extname]',
+        chunkFileNames: 'assets/[name].js',
+        entryFileNames: 'assets/[name].js',
+      },
     },
   },
 })
