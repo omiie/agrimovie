@@ -1,3 +1,9 @@
+import instagramUrl from '../../assets/img/IG.jpg';
+import logoUrl from '../../assets/img/LOGO_AGRIMOVIE.jpg';
+import tiktokUrl from '../../assets/img/TT.jpg';
+import whatsappUrl from '../../assets/img/WA.jpg';
+import youtubeUrl from '../../assets/img/YT.png';
+
 export function footer() {
   const footerElement = document.getElementById('footer');
   if (!footerElement) return;
@@ -16,29 +22,29 @@ const activeSub = (pageName) =>{
 
                 <!-- Brand -->
                 <div>
-                    <img src="../assets/img/LOGO_AGRIMOVIE.jpg" alt="Agrimovie" class="h-16 w-auto mb-4"
+                    <img src="${logoUrl}" alt="Agrimovie" class="h-16 w-auto mb-4"
                         style="filter:brightness(0.9);" />
                     <p class="text-[13px] font-light text-muted leading-[1.7] mb-5">Organisasi Mahasiswa
                         Film<br />Institut Pertanian Bogor<br />Bogor, Jawa Barat</p>
                     <div class="flex gap-3">
                         <a href="https://www.instagram.com/agrimovie/"
                             class="w-10 h-10 rounded-full bg-surface border border-border flex items-center justify-center hover:bg-green hover:border-green hover:-translate-y-[3px] transition-all duration-300">
-                            <img src="../assets/img/IG.jpg" alt="IG"
+                            <img src="${instagramUrl}" alt="IG"
                                 style="height:20px;width:auto;filter:brightness(0.85);margin:0;" />
                         </a>
                         <a href="https://www.youtube.com/@agrimoviesvipb"
                             class="w-10 h-10 rounded-full bg-surface border border-border flex items-center justify-center hover:bg-green hover:border-green hover:-translate-y-[3px] transition-all duration-300">
-                            <img src="../assets/img/YT.png" alt="YT"
+                            <img src="${youtubeUrl}" alt="YT"
                                 style="height:20px;width:auto;filter:brightness(0.85);margin:0;" />
                         </a>
                         <a href="https://www.tiktok.com/@agrimoviesvipb"
                             class="w-10 h-10 rounded-full bg-surface border border-border flex items-center justify-center hover:bg-green hover:border-green hover:-translate-y-[3px] transition-all duration-300">
-                            <img src="../assets/img/TT.jpg" alt="TT"
+                            <img src="${tiktokUrl}" alt="TT"
                                 style="height:20px;width:auto;filter:brightness(0.85);margin:0;" />
                         </a>
                         <a href="#"
                             class="w-10 h-10 rounded-full bg-surface border border-border flex items-center justify-center hover:bg-green hover:border-green hover:-translate-y-[3px] transition-all duration-300">
-                            <img src="../assets/img/WA.jpg" alt="WA"
+                            <img src="${whatsappUrl}" alt="WA"
                                 style="height:20px;width:auto;filter:brightness(0.85);margin:0;" />
                         </a>
                     </div>

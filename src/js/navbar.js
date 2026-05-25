@@ -1,3 +1,5 @@
+import logoTransparentUrl from '../../assets/img/LOGO_AGRIMOVIE-removebg-preview.png';
+
 export function navbar() {
   const navbar = document.getElementById('navbar');
   if (!navbar) return;
@@ -20,7 +22,7 @@ navbar.innerHTML = `
 
             <!-- Logo -->
             <a href="index.html" class="nav-logo ">
-                <img src="../assets/img/LOGO_AGRIMOVIE-removebg-preview.png" alt="Agrimovie Filmmaker Club"
+                <img src="${logoTransparentUrl}" alt="Agrimovie Filmmaker Club"
                     class="h-8 lg:h-12 w-auto object-contain drop-shadow-[0_0_10px_rgba(42,154,60,0.3)] transition-all duration-300 hover:drop-shadow-[0_0_16px_rgba(42,154,60,0.6)]" />
             </a>
 

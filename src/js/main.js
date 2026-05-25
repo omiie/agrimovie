@@ -46,6 +46,43 @@ const daftarHero = {
   "eventUpcoming.html": {
     title: "Acara",
   },
+  // lanjut
+   "index":{
+    title:"Kosong",
+  },
+  "about": {
+    title: "Tentang",
+  },
+  "aboutVisi": {
+    title: "Tentang",
+  },
+  "aboutStruktur": {
+    title: "Tentang",
+  },
+  "filmAll": {
+    title: "Film",
+  },
+  "filmBesar": {
+    title: "Film",
+  },
+  "filmPendek": {
+    title: "Film",
+  },
+  "filmBts": {
+    title: "Film",
+  },
+  "filmDokumenter": {
+    title: "Film",
+  },
+  "filmAchievement": {
+    title: "Pencapaian",
+  },
+  "eventProgram": {
+    title: "Program",
+  },
+  "eventUpcoming": {
+    title: "Acara",
+  },
 };
 const halaman = daftarHero[path] || daftarHero['index.html']
 hero(halaman.title);
