@@ -1,7 +1,6 @@
 export function hero(title) {
   const hero = document.getElementById('hero');
   if (!hero) return;
-  console.log(title)
 hero.innerHTML = `
     <section
         class="hero-letterbox relative min-h-[80vh] flex flex-col justify-center overflow-hidden bg-black"
