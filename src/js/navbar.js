@@ -12,7 +12,7 @@ export function navbar() {
     : "text-white/75 bg-transparent";
   };
   const activeSub = (pageName) =>{
-    return path == pageName
+    return pageName.includes(path) 
     ? "text-green-lt " 
     : "text-subtle hover:text-white";
   } 
