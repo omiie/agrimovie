@@ -1,4 +1,4 @@
-import './input.css';
+import '../css/input.css';
 import { footer } from './footer.js';
 import { hero } from './hero.js';
 import { navbar } from './navbar.js';
