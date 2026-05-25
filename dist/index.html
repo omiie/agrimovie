@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agrimovie</title>
+    <link rel="icon" type="image/x-icon" href="/assets/LOGO_AGRIMOVIE-removebg-preview-C0eT3MpA.png">
+
+
+    <!--  Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap"
+        rel="stylesheet" />
+
+  <script type="module" crossorigin src="/assets/main-Dp5DZkeP.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-BoKv7zU9.css">
+</head>
+
+<body class=" bg-dark text-white font-body text-base leading-relaxed" style="-webkit-font-smoothing:antialiased;">
+
+    <!-- ══════════════════════════════════════════
+     FILM STRIP TOP, TOP BAR & Navbar
+══════════════════════════════════════════ -->
+    <div id="strip"></div>
+    <div id="navbar"></div>
+
+    <!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+    <section class="hero-letterbox relative min-h-[92vh] flex flex-col justify-center overflow-hidden bg-black" id="heroo">
+
+        <!-- Background placeholder -->
+        <div class="absolute inset-0 bg-surface flex items-center justify-center">
+            <div class="flex flex-col items-center gap-[14px] text-muted">
+                <div
+                    class="play-btn w-[80px] h-[80px] rounded-full border-2 border-green flex items-center justify-center cursor-pointer animate-pulseGreen transition-all duration-300 hover:bg-[rgba(42,154,60,0.3)] hover:scale-[1.08]">
+                    <svg class="w-[30px] h-[30px] fill-green-lt ml-1" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                </div>
+                <p style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;">[ Hero Video — Karya Terbaik
+                    Agrimovie ]</p>
+            </div>
+        </div>
+
+        <!-- Overlays -->
+        <div class="absolute inset-0 z-[2]"
+            style="background:linear-gradient(to right,rgba(0,0,0,0.88) 0%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.15) 100%);">
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-[60%] z-[3]"
+            style="background:linear-gradient(to top,rgba(0,0,0,0.95),transparent);"></div>
+
+        <!-- Content -->
+        <div class="relative z-10 max-w-[1240px] mx-auto px-10 pb-20 w-full max-md:px-5 max-md:pb-[60px]">
+            <p class="text-[11px] font-bold tracking-widest2 uppercase text-green-lt mb-4 animate-fadeUp0">Filmmaker
+                Club · IPB University</p>
+            <h1 class="font-display uppercase text-white mb-6 animate-fadeUp1"
+                style="font-size:clamp(60px,9vw,120px);line-height:0.95;letter-spacing:0.02em;">
+                Make Movie <br>
+                <span class="text-green-lt">With Harmony</span>
+            </h1>
+            <p class="text-[17px] font-light text-white/65 max-w-[500px] leading-[1.7] mb-9 animate-fadeUp2">
+                Agrimovie adalah ruang kreatif mahasiswa IPB yang berkomitmen menghadirkan karya film berkualitas dan
+                berdampak nyata.
+            </p>
+            <div class="flex gap-[14px] flex-wrap animate-fadeUp3 max-sm:flex-col max-sm:items-start">
+                <a href="about.html"
+                    class="inline-flex items-center gap-2 font-body text-[13px] font-bold tracking-widest6 uppercase px-7 py-[13px] rounded-[3px] cursor-pointer bg-transparent text-white border-[1.5px] border-white/35 hover:border-green hover:text-green-lt hover:-translate-y-0.5 transition-all duration-300">Tentang
+                    Agrimovie</a>
+                <a href="filmAll.html"
+                    class="inline-flex items-center gap-2 font-body text-[13px] font-bold tracking-widest6 uppercase px-7 py-[13px] rounded-[3px] cursor-pointer bg-green text-white hover:bg-green-lt hover:-translate-y-0.5 hover:shadow-green-btn transition-all duration-300">Lihat
+                    Karya Kami</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+     TICKER
+══════════════════════════════════════════ -->
+    <div class="bg-green overflow-hidden py-[10px] whitespace-nowrap" aria-hidden="true">
+        <div class="inline-flex gap-0 animate-marquee" id="ticker-inner">
+            <span class="inline-block font-display text-[14px] tracking-widest4 text-white px-[30px]">AGRIMOVIE
+                FILMMAKER CLUB <span class="text-white/50 mx-[10px]">●</span></span>
+            <span class="inline-block font-display text-[14px] tracking-widest4 text-white px-[30px]">FILM PENDEK <span
+                    class="text-white/50 mx-[10px]">●</span></span>
+            <span class="inline-block font-display text-[14px] tracking-widest4 text-white px-[30px]">DOKUMENTER <span
+                    class="text-white/50 mx-[10px]">●</span></span>
+            <span class="inline-block font-display text-[14px] tracking-widest4 text-white px-[30px]">Di Balik Layar
+                <span class="text-white/50 mx-[10px]">●</span></span>
+            <span class="inline-block font-display text-[14px] tracking-widest4 text-white px-[30px]">FESTIVAL FILM
+                <span class="text-white/50 mx-[10px]">●</span></span>
+            <span class="inline-block font-display text-[14px] tracking-widest4 text-white px-[30px]">IPB UNIVERSITY
+                <span class="text-white/50 mx-[10px]">●</span></span>
+            <span class="inline-block font-display text-[14px] tracking-widest4 text-white px-[30px]">SINEMATOGRAFI
+                <span class="text-white/50 mx-[10px]">●</span></span>
+            <span class="inline-block font-display text-[14px] tracking-widest4 text-white px-[30px]">PRODUKSI KREATIF
+                <span class="text-white/50 mx-[10px]">●</span></span>
+            <span class="inline-block font-display text-[14px] tracking-widest4 text-white px-[30px]">AGRIMOVIE
+                FILMMAKER CLUB <span class="text-white/50 mx-[10px]">●</span></span>
+            <span class="inline-block font-display text-[14px] tracking-widest4 text-white px-[30px]">FILM PENDEK <span
+                    class="text-white/50 mx-[10px]">●</span></span>
+            <span class="inline-block font-display text-[14px] tracking-widest4 text-white px-[30px]">DOKUMENTER <span
+                    class="text-white/50 mx-[10px]">●</span></span>
+            <span class="inline-block font-display text-[14px] tracking-widest4 text-white px-[30px]">BEHIND THE SCENE
+                <span class="text-white/50 mx-[10px]">●</span></span>
+            <span class="inline-block font-display text-[14px] tracking-widest4 text-white px-[30px]">FESTIVAL FILM
+                <span class="text-white/50 mx-[10px]">●</span></span>
+            <span class="inline-block font-display text-[14px] tracking-widest4 text-white px-[30px]">IPB UNIVERSITY
+                <span class="text-white/50 mx-[10px]">●</span></span>
+            <span class="inline-block font-display text-[14px] tracking-widest4 text-white px-[30px]">SINEMATOGRAFI
+                <span class="text-white/50 mx-[10px]">●</span></span>
+            <span class="inline-block font-display text-[14px] tracking-widest4 text-white px-[30px]">PRODUKSI KREATIF
+                <span class="text-white/50 mx-[10px]">●</span></span>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════
+     FILMS & GALERI
+══════════════════════════════════════════ -->
+    <section class="py-[90px] max-md:py-[60px]" id="films">
+        <div class="max-w-[1240px] mx-auto px-10 max-md:px-5">
+            <div class="flex items-end justify-between gap-5 mb-[50px] reveal max-md:flex-col max-md:items-start">
+                <div>
+                    <p class="text-[10px] font-bold tracking-widest2 uppercase text-green-lt mb-[10px]">Films &amp;
+                        Galeri</p>
+                    <h2 class="font-display uppercase text-white leading-[1.05] tracking-widest10 mb-4"
+                        style="font-size:clamp(32px,4vw,50px);">Karya Film Agrimovie</h2>
+                    <p class="text-[15px] font-light text-subtle max-w-[560px] leading-[1.7]">Koleksi lengkap film
+                        pendek, dokumenter, dan karya visual yang telah kami produksi.</p>
+                </div>
+                <a href="#"
+                    class="text-[12px] font-bold tracking-widest5 uppercase text-green-lt flex items-center gap-[6px] whitespace-nowrap hover:gap-[10px] hover:text-green transition-all duration-300">Semua
+                    Karya &nbsp;→</a>
+            </div>
+
+            <!-- Tab bar -->
+            <div class="flex gap-2 mb-8 overflow-x-auto pb-1 reveal">
+                <button
+                    class="inline-flex items-center gap-2 font-body text-[11px] font-bold tracking-widest6 uppercase px-[18px] py-2 rounded-[3px] cursor-pointer bg-green text-white hover:bg-green-lt hover:-translate-y-0.5 hover:shadow-green-btn transition-all duration-300"
+                    onclick="filterFilm(this,'film')" id="tab-film">Film</button>
+                <button
+                    class="inline-flex items-center gap-2 font-body text-[11px] font-bold tracking-widest6 uppercase px-[18px] py-2 rounded-[3px] cursor-pointer bg-dark2 text-white border-[1.5px] border-border hover:border-green hover:text-green-lt transition-all duration-300"
+                    onclick="filterFilm(this,'bts')" id="tab-bts">Di Balik Layar</button>
+                <button
+                    class="inline-flex items-center gap-2 font-body text-[11px] font-bold tracking-widest6 uppercase px-[18px] py-2 rounded-[3px] cursor-pointer bg-dark2 text-white border-[1.5px] border-border hover:border-green hover:text-green-lt transition-all duration-300"
+                    onclick="filterFilm(this,'achievement')" id="tab-achv">Pencapaian</button>
+            </div>
+
+            <!-- Films Grid -->
+            <div class="film-grid grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-px bg-border border border-border reveal" data-genre="film"
+                id="film-grid">
+
+                <!-- 1 -->
+                <div class="film-card col-span-full grid grid-cols-2 max-lg:grid-cols-1 bg-black overflow-hidden relative cursor-pointer transition-transform duration-300">
+                    <div
+                        class="film-card-thumb relative bg-surface overflow-hidden flex items-center justify-center min-h-[340px] max-lg:min-h-[220px]">
+                        <div class="text-[12px] text-muted text-center px-5">[ Thumbnail Film Utama ]</div>
+                        <span
+                            class="absolute top-3 left-3 text-[9px] font-extrabold tracking-widest4 uppercase py-1 px-[9px] rounded-[2px] z-[3] bg-green text-white">Film
+                            </span>
+                        <div
+                            class="film-card-play absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 z-[2]">
+                            <div
+                                class="w-[52px] h-[52px] rounded-full bg-[rgba(42,154,60,0.9)] flex items-center justify-center shadow-play-icon">
+                                <svg class="w-[22px] h-[22px] fill-white ml-[3px]" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="film-card-body bg-black flex flex-col justify-center px-11 py-10 max-lg:px-5 max-lg:py-6">
+                        <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-green-lt mb-[6px]">Film Pendek ·
+                            2025</p>
+                        <h3
+                            class="film-card-title font-display text-[36px] tracking-widest10 text-white mb-[14px] leading-[1.1] transition-colors duration-300">
+                            Judul Film Terbaru Agrimovie</h3>
+                        <p class="text-[14px] font-light text-muted leading-[1.6] mb-6 line-clamp-4">Deskripsi singkat
+                            mengenai film ini — tema, pesan, dan cerita di balik layar produksi. Sebuah karya yang
+                            mencerminkan semangat mahasiswa IPB dalam berkarya melalui medium film.</p>
+                        <div class="flex gap-[14px] text-[11px] text-muted font-medium tracking-widest9">
+                            <span>📅 2025</span>
+                            <span>⏱ 12 menit</span>
+                            <span>🎬 Drama</span>
+                        </div>
+                        <div class="mt-6 flex gap-3">
+                            <a href="#"
+                                class="inline-flex items-center gap-2 font-body text-[13px] font-bold tracking-widest6 uppercase px-[22px] py-[10px] rounded-[3px] bg-green text-white hover:bg-green-lt hover:-translate-y-0.5 hover:shadow-green-btn transition-all duration-300">Tonton
+                                Film</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="film-card bg-dark2 overflow-hidden relative cursor-pointer transition-transform duration-300 hover:z-[2]"
+                    data-genre="bts">
+                    <div class=""></div>
+                    <div class="film-card-thumb relative bg-surface overflow-hidden flex items-center justify-center"
+                        style="aspect-ratio:16/10;">
+                        <div class="text-[12px] text-muted text-center px-5">[ Thumbnail ]</div>
+                        <span
+                            class="absolute top-3 left-3 text-[9px] font-extrabold tracking-widest4 uppercase py-1 px-[9px] rounded-[2px] z-[3] bg-green text-white">Film</span>
+                        <div
+                            class="film-card-play absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 z-[2]">
+                            <div
+                                class="w-[52px] h-[52px] rounded-full bg-[rgba(42,154,60,0.9)] flex items-center justify-center shadow-play-icon">
+                                <svg class="w-[22px] h-[22px] fill-white ml-[3px]" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-[22px] pt-5 pb-6">
+                        <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-green-lt mb-[6px]">Dokumenter ·
+                            2024</p>
+                        <h3
+                            class="film-card-title font-display text-[20px] tracking-widest10 text-white mb-2 leading-[1.1] transition-colors duration-300">
+                            Behind the Scene Judul Film</h3>
+                        <p class="text-[13px] font-light text-muted leading-[1.6] mb-[14px] line-clamp-2">Deskripsi
+                            singkat tentang film dokumenter ini dan tema yang diangkat.</p>
+                        <div class="flex gap-[14px] text-xs text-muted font-medium tracking-widest9">
+                            <span>📅 2025</span>
+                            <span>🏆 Juara ke-</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="film-card bg-dark2 overflow-hidden relative cursor-pointer transition-transform duration-300 hover:z-[2]"
+                    data-genre="bts">
+                    <div class=""></div>
+                    <div class="film-card-thumb relative bg-surface overflow-hidden flex items-center justify-center"
+                        style="aspect-ratio:16/10;">
+                        <div class="text-[12px] text-muted text-center px-5">[ Thumbnail ]</div>
+                        <span
+                            class="absolute top-3 left-3 text-[9px] font-extrabold tracking-widest4 uppercase py-1 px-[9px] rounded-[2px] z-[3] bg-green text-white">Film</span>
+                        <div
+                            class="film-card-play absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 z-[2]">
+                            <div
+                                class="w-[52px] h-[52px] rounded-full bg-[rgba(42,154,60,0.9)] flex items-center justify-center shadow-play-icon">
+                                <svg class="w-[22px] h-[22px] fill-white ml-[3px]" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-[22px] pt-5 pb-6">
+                        <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-green-lt mb-[6px]">Dokumenter ·
+                            2024</p>
+                        <h3
+                            class="film-card-title font-display text-[20px] tracking-widest10 text-white mb-2 leading-[1.1] transition-colors duration-300">
+                            Nama Film Kedua</h3>
+                        <p class="text-[13px] font-light text-muted leading-[1.6] mb-[14px] line-clamp-2">Deskripsi
+                            singkat tentang film dokumenter ini dan tema yang diangkat.</p>
+                        <div class="flex gap-[14px] text-[11px] text-muted font-medium tracking-widest9"><span>📅
+                                2024</span><span>⏱ 18 menit</span></div>
+                    </div>
+                </div>
+                
+                <!-- 4 -->
+                <div class="film-card bg-dark2 overflow-hidden relative cursor-pointer transition-transform duration-300 hover:z-[2]"
+                    data-genre="bts">
+                    <div class=""></div>
+                    <div class="film-card-thumb relative bg-surface overflow-hidden flex items-center justify-center"
+                        style="aspect-ratio:16/10;">
+                        <div class="text-[12px] text-muted text-center px-5">[ Thumbnail ]</div>
+                        <span
+                            class="absolute top-3 left-3 text-[9px] font-extrabold tracking-widest4 uppercase py-1 px-[9px] rounded-[2px] z-[3] bg-green text-white">Film</span>
+                        <div
+                            class="film-card-play absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 z-[2]">
+                            <div
+                                class="w-[52px] h-[52px] rounded-full bg-[rgba(42,154,60,0.9)] flex items-center justify-center shadow-play-icon">
+                                <svg class="w-[22px] h-[22px] fill-white ml-[3px]" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-[22px] pt-5 pb-6">
+                        <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-green-lt mb-[6px]">Dokumenter ·
+                            2024</p>
+                        <h3
+                            class="film-card-title font-display text-[20px] tracking-widest10 text-white mb-2 leading-[1.1] transition-colors duration-300">
+                            Nama Film Kedua</h3>
+                        <p class="text-[13px] font-light text-muted leading-[1.6] mb-[14px] line-clamp-2">Deskripsi
+                            singkat tentang film dokumenter ini dan tema yang diangkat.</p>
+                        <div class="flex gap-[14px] text-[11px] text-muted font-medium tracking-widest9"><span>📅
+                                2024</span><span>⏱ 18 menit</span></div>
+                    </div>
+                </div>
+                
+
+            </div>
+            <!-- /film-grid -->
+            <!-- BTS Grid-->
+            <div class="film-grid grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-px bg-border border border-border reveal" data-genre="bts"
+                id="film-grid">
+
+                <!-- 1 -->
+                <div class="film-card col-span-full grid grid-cols-2 max-lg:grid-cols-1 bg-black overflow-hidden relative cursor-pointer transition-transform duration-300">
+                    <div
+                        class="film-card-thumb relative bg-surface overflow-hidden flex items-center justify-center min-h-[340px] max-lg:min-h-[220px]">
+                        <div class="text-[12px] text-muted text-center px-5">[ Thumbnail  ]</div>
+                        <span
+                            class="absolute top-3 left-3 text-[9px] font-extrabold tracking-widest4 uppercase py-1 px-[9px] rounded-[2px] z-[3] bg-green text-white">BTS</span>
+                        <div
+                            class="film-card-play absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 z-[2]">
+                            <div
+                                class="w-[52px] h-[52px] rounded-full bg-[rgba(42,154,60,0.9)] flex items-center justify-center shadow-play-icon">
+                                <svg class="w-[22px] h-[22px] fill-white ml-[3px]" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="film-card-body bg-black flex flex-col justify-center px-11 py-10 max-lg:px-5 max-lg:py-6">
+                        <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-green-lt mb-[6px]">Dibalik Layar ·
+                            2025</p>
+                        <h3
+                            class="film-card-title font-display text-[36px] tracking-widest10 text-white mb-[14px] leading-[1.1] transition-colors duration-300">
+                            Di Balik Layar Judul Film</h3>
+                        <p class="text-[14px] font-light text-muted leading-[1.6] mb-6 line-clamp-4">Deskripsi singkat
+                            mengenai film ini — tema, pesan, dan cerita di balik layar produksi. Sebuah karya yang
+                            mencerminkan semangat mahasiswa IPB dalam berkarya melalui medium film.</p>
+                        <div class="flex gap-[14px] text-[11px] text-muted font-medium tracking-widest9">
+                            <span>📅 2025</span>
+                            <span>⏱ 12 menit</span>
+                        </div>
+                        <div class="mt-6 flex gap-3">
+                            <a href="#"
+                                class="inline-flex items-center gap-2 font-body text-[13px] font-bold tracking-widest6 uppercase px-[22px] py-[10px] rounded-[3px] bg-green text-white hover:bg-green-lt hover:-translate-y-0.5 hover:shadow-green-btn transition-all duration-300">Tonton Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="film-card bg-dark2 overflow-hidden relative cursor-pointer transition-transform duration-300 hover:z-[2]"
+                    data-genre="bts">
+                    <div class=""></div>
+                    <div class="film-card-thumb relative bg-surface overflow-hidden flex items-center justify-center"
+                        style="aspect-ratio:16/10;">
+                        <div class="text-[12px] text-muted text-center px-5">[ Thumbnail ]</div>
+                        <span
+                            class="absolute top-3 left-3 text-[9px] font-extrabold tracking-widest4 uppercase py-1 px-[9px] rounded-[2px] z-[3] bg-green text-white">BTS</span>
+                        <div
+                            class="film-card-play absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 z-[2]">
+                            <div
+                                class="w-[52px] h-[52px] rounded-full bg-[rgba(42,154,60,0.9)] flex items-center justify-center shadow-play-icon">
+                                <svg class="w-[22px] h-[22px] fill-white ml-[3px]" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-[22px] pt-5 pb-6">
+                        <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-green-lt mb-[6px]">Dibalik Layar ·
+                            2024</p>
+                        <h3
+                            class="film-card-title font-display text-[20px] tracking-widest10 text-white mb-2 leading-[1.1] transition-colors duration-300">
+                            Dibalik Layar Judul Film</h3>
+                        <p class="text-[13px] font-light text-muted leading-[1.6] mb-[14px] line-clamp-2">Deskripsi
+                            singkat tentang film dokumenter ini dan tema yang diangkat.</p>
+                        <div class="flex gap-[14px] text-[11px] text-muted font-medium tracking-widest9"><span>📅
+                                2024</span><span>⏱ 18 menit</span></div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="film-card bg-dark2 overflow-hidden relative cursor-pointer transition-transform duration-300 hover:z-[2]"
+                    data-genre="bts">
+                    <div class=""></div>
+                    <div class="film-card-thumb relative bg-surface overflow-hidden flex items-center justify-center"
+                        style="aspect-ratio:16/10;">
+                        <div class="text-[12px] text-muted text-center px-5">[ Thumbnail ]</div>
+                        <span
+                            class="absolute top-3 left-3 text-[9px] font-extrabold tracking-widest4 uppercase py-1 px-[9px] rounded-[2px] z-[3] bg-green text-white">BTS</span>
+                        <div
+                            class="film-card-play absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 z-[2]">
+                            <div
+                                class="w-[52px] h-[52px] rounded-full bg-[rgba(42,154,60,0.9)] flex items-center justify-center shadow-play-icon">
+                                <svg class="w-[22px] h-[22px] fill-white ml-[3px]" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-[22px] pt-5 pb-6">
+                        <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-green-lt mb-[6px]">Dibalik Layar ·
+                            2024</p>
+                        <h3
+                            class="film-card-title font-display text-[20px] tracking-widest10 text-white mb-2 leading-[1.1] transition-colors duration-300">
+                            Dibalik Layar Judul Film</h3>
+                        <p class="text-[13px] font-light text-muted leading-[1.6] mb-[14px] line-clamp-2">Deskripsi
+                            singkat tentang film dokumenter ini dan tema yang diangkat.</p>
+                        <div class="flex gap-[14px] text-[11px] text-muted font-medium tracking-widest9"><span>📅
+                                2024</span><span>⏱ 18 menit</span></div>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="film-card bg-dark2 overflow-hidden relative cursor-pointer transition-transform duration-300 hover:z-[2]"
+                    data-genre="achievement">
+                    <div class="film-card-thumb relative bg-surface overflow-hidden flex items-center justify-center"
+                        style="aspect-ratio:16/10;">
+                        <div class="text-[12px] text-muted text-center px-5">[ Thumbnail ]</div>
+                        <span
+                            class="absolute top-3 left-3 text-[9px] font-extrabold tracking-widest4 uppercase py-1 px-[9px] rounded-[2px] z-[3] bg-green text-white">BTS</span>
+                        <div
+                            class="film-card-play absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 z-[2]">
+                            <div
+                                class="w-[52px] h-[52px] rounded-full bg-[rgba(42,154,60,0.9)] flex items-center justify-center shadow-play-icon">
+                                <svg class="w-[22px] h-[22px] fill-white ml-[3px]" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-[22px] pt-5 pb-6">
+                        <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-green-lt mb-[6px]">Dibalik Layar
+                            · 2024</p>
+                        <h3
+                            class="film-card-title font-display text-[20px] tracking-widest10 text-white mb-2 leading-[1.1] transition-colors duration-300">
+                            Dibalik Layar Judul Film</h3>
+                        <p class="text-[13px] font-light text-muted leading-[1.6] mb-[14px] line-clamp-2">Eksplorasi
+                            visual eksperimental yang menggabungkan teknik sinematografi unik.</p>
+                        <div class="flex gap-[14px] text-[11px] text-muted font-medium tracking-widest9"><span>📅
+                                2024</span><span>⏱ 9 menit</span></div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /bts-grid -->
+            <!-- achv Grid-->
+             <div class="film-grid grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-px bg-border border border-border reveal" data-genre="achievement"
+                id="film-grid">
+
+                <!-- 1 -->
+                <div class="film-card col-span-full grid grid-cols-2 max-lg:grid-cols-1 bg-black overflow-hidden relative cursor-pointer transition-transform duration-300">
+                    <div
+                        class="film-card-thumb relative bg-surface overflow-hidden flex items-center justify-center min-h-[340px] max-lg:min-h-[220px]">
+                        <div class="text-[12px] text-muted text-center px-5">[ Thumbnail  ]</div>
+                        <span
+                            class="absolute top-3 left-3 text-[9px] font-extrabold tracking-widest4 uppercase py-1 px-[9px] rounded-[2px] z-[3] bg-green text-white">Pencapaian</span>
+                    </div>
+                    <div
+                        class="film-card-body bg-black flex flex-col justify-center px-11 py-10 max-lg:px-5 max-lg:py-6">
+                        <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-green-lt mb-[6px]">Pencapaian ·
+                            2025</p>
+                        <h3
+                            class="film-card-title font-display text-[36px] tracking-widest10 text-white mb-[14px] leading-[1.1] transition-colors duration-300">
+                            Nama Event</h3>
+                        <p class="text-[14px] font-light text-muted leading-[1.6] mb-6 line-clamp-4">Deskripsi singkat
+                            mengenai film ini — tema, pesan, dan cerita di balik layar produksi. Sebuah karya yang
+                            mencerminkan semangat mahasiswa IPB dalam berkarya melalui medium film.</p>
+                        <div class="flex gap-[14px] text-xs text-muted font-medium tracking-widest9">
+                            <span>📅 2025</span>
+                            <span>🏆 Juara ke-</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="film-card bg-dark2 overflow-hidden relative cursor-pointer transition-transform duration-300 hover:z-[2]"
+                    data-genre="bts">
+                    <div class=""></div>
+                    <div class="film-card-thumb relative bg-surface overflow-hidden flex items-center justify-center"
+                        style="aspect-ratio:16/10;">
+                        <div class="text-[12px] text-muted text-center px-5">[ Thumbnail ]</div>
+                        <span
+                            class="absolute top-3 left-3 text-[9px] font-extrabold tracking-widest4 uppercase py-1 px-[9px] rounded-[2px] z-[3] bg-green text-white">Pencapaian</span>
+                        <div
+                            class="film-card-play absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 z-[2]">
+                            <div
+                                class="w-[52px] h-[52px] rounded-full bg-[rgba(42,154,60,0.9)] flex items-center justify-center shadow-play-icon">
+                                <svg class="w-[22px] h-[22px] fill-white ml-[3px]" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-[22px] pt-5 pb-6">
+                        <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-green-lt mb-[6px]">Pencapaian ·
+                            2024</p>
+                        <h3
+                            class="film-card-title font-display text-[20px] tracking-widest10 text-white mb-2 leading-[1.1] transition-colors duration-300">
+                            Nama Event</h3>
+                        <p class="text-[13px] font-light text-muted leading-[1.6] mb-[14px] line-clamp-2">Deskripsi
+                            singkat tentang film dokumenter ini dan tema yang diangkat.</p>
+                        <div class="flex gap-[14px] text-xs text-muted font-medium tracking-widest9">
+                            <span>📅 2025</span>
+                            <span>🏆 Juara ke-</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="film-card bg-dark2 overflow-hidden relative cursor-pointer transition-transform duration-300 hover:z-[2]"
+                    data-genre="bts">
+                    <div class=""></div>
+                    <div class="film-card-thumb relative bg-surface overflow-hidden flex items-center justify-center"
+                        style="aspect-ratio:16/10;">
+                        <div class="text-[12px] text-muted text-center px-5">[ Thumbnail ]</div>
+                        <span
+                            class="absolute top-3 left-3 text-[9px] font-extrabold tracking-widest4 uppercase py-1 px-[9px] rounded-[2px] z-[3] bg-green text-white">Pencapaian</span>
+                        <div
+                            class="film-card-play absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 z-[2]">
+                            <div
+                                class="w-[52px] h-[52px] rounded-full bg-[rgba(42,154,60,0.9)] flex items-center justify-center shadow-play-icon">
+                                <svg class="w-[22px] h-[22px] fill-white ml-[3px]" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-[22px] pt-5 pb-6">
+                        <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-green-lt mb-[6px]">Pencapaian ·
+                            2024</p>
+                        <h3
+                            class="film-card-title font-display text-[20px] tracking-widest10 text-white mb-2 leading-[1.1] transition-colors duration-300">
+                            Nama Event</h3>
+                        <p class="text-[13px] font-light text-muted leading-[1.6] mb-[14px] line-clamp-2">Deskripsi
+                            singkat tentang film dokumenter ini dan tema yang diangkat.</p>
+                        <div class="flex gap-[14px] text-xs text-muted font-medium tracking-widest9">
+                            <span>📅 2025</span>
+                            <span>🏆 Juara ke-</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="film-card bg-dark2 overflow-hidden relative cursor-pointer transition-transform duration-300 hover:z-[2]"
+                    data-genre="achievement">
+                    <div class="film-card-thumb relative bg-surface overflow-hidden flex items-center justify-center"
+                        style="aspect-ratio:16/10;">
+                        <div class="text-[12px] text-muted text-center px-5">[ Thumbnail ]</div>
+                        <span
+                            class="absolute top-3 left-3 text-[9px] font-extrabold tracking-widest4 uppercase py-1 px-[9px] rounded-[2px] z-[3] bg-green text-white">Pencapaian</span>
+                        <div
+                            class="film-card-play absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 z-[2]">
+                            <div
+                                class="w-[52px] h-[52px] rounded-full bg-[rgba(42,154,60,0.9)] flex items-center justify-center shadow-play-icon">
+                                <svg class="w-[22px] h-[22px] fill-white ml-[3px]" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-[22px] pt-5 pb-6">
+                        <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-green-lt mb-[6px]">Pencapaian
+                            · 2024</p>
+                        <h3
+                            class="film-card-title font-display text-[20px] tracking-widest10 text-white mb-2 leading-[1.1] transition-colors duration-300">
+                            Nama Event</h3>
+                        <p class="text-[13px] font-light text-muted leading-[1.6] mb-[14px] line-clamp-2">Eksplorasi
+                            visual eksperimental yang menggabungkan teknik sinematografi unik.</p>
+                        <div class="flex gap-[14px] text-xs text-muted font-medium tracking-widest9">
+                            <span>📅 2025</span>
+                            <span>🏆 Juara ke-</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /achv-grid -->
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+     EVENTS & PROGRAM
+    ══════════════════════════════════════════ -->
+    <section class="py-[90px] max-md:py-[60px] bg-dark2" id="events">
+        <div class="max-w-[1240px] mx-auto px-10 max-md:px-5">
+            <div class="flex items-end justify-between gap-5 mb-[50px] reveal max-md:flex-col max-md:items-start">
+                <div>
+                    <p class="text-[10px] font-bold tracking-widest2 uppercase text-green-lt mb-[10px]">Upcoming</p>
+                    <h2 class="font-display uppercase text-white leading-[1.05] tracking-widest10"
+                        style="font-size:clamp(32px,4vw,50px);">Events &amp; Program</h2>
+                </div>
+                <a href="#"
+                    class="text-[12px] font-bold tracking-widest5 uppercase text-green-lt flex items-center gap-[6px] whitespace-nowrap hover:gap-[10px] hover:text-green transition-all duration-300">Semua
+                    Event &nbsp;→</a>
+            </div>
+
+            <!-- Featured Event -->
+            <div class="event-featured bg-dark border border-border border-l-4 border-l-green rounded flex gap-7 items-start p-7 max-md:flex-col mb-5 reveal transition-all duration-300"
+                id="program">
+                <div class="bg-green text-white rounded-[3px] px-4 py-3 text-center min-w-[72px] flex-shrink-0">
+                    <div class="font-display text-[36px] leading-none tracking-widest11">25</div>
+                    <div class="text-[10px] font-bold tracking-widest3 uppercase">Mei</div>
+                    <div class="text-[11px] opacity-70">2025</div>
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-wrap gap-2 mb-[10px]">
+                        <span
+                            class="text-[10px] font-bold tracking-widest5 uppercase py-1 px-[10px] rounded-[2px] bg-[rgba(42,154,60,0.15)] text-green-lt border border-[rgba(42,154,60,0.3)]">Festival
+                            Film</span>
+                        <span
+                            class="text-[10px] font-bold tracking-widest5 uppercase py-1 px-[10px] rounded-[2px] bg-white/[0.05] text-subtle border border-border">Terbuka
+                            Umum</span>
+                    </div>
+                    <h3 class="font-display text-[22px] tracking-widest10 mb-[6px]">Festival Film Mahasiswa IPB 2025
+                    </h3>
+                    <p class="text-[13px] font-light text-subtle leading-[1.6] mb-3">Pemutaran dan kompetisi film pendek
+                        mahasiswa IPB. Raih penghargaan dan jadilah bagian dari ekosistem film kampus!</p>
+                    <p class="text-[12px] text-muted">📍 Auditorium Andi Hakim Nasution, IPB &nbsp;·&nbsp; 🕐 09.00 – 17.00 WIB</p>
+                </div>
+            </div>
+
+            <!-- Small Events -->
+            <div class="grid grid-cols-2 max-md:grid-cols-1 gap-4 reveal">
+                <div
+                    class="bg-dark border border-border rounded flex gap-4 items-start p-[18px] transition-all duration-300 hover:border-green hover:-translate-y-0.5">
+                    <div class="bg-surface rounded-[3px] px-3 py-2 text-center min-w-[50px]">
+                        <div class="font-display text-[22px] text-green-lt leading-none tracking-widest11">10</div>
+                        <div class="text-[9px] font-bold text-muted tracking-widest4 uppercase">JUN</div>
+                    </div>
+                    <div>
+                        <h4 class="text-[14px] font-semibold mb-1 text-white">Workshop Editing Video Lanjutan</h4>
+                        <p class="text-[11px] text-muted">Gedung FAPERTA IPB · 13.00 – 16.00 WIB</p>
+                        <a href="#"
+                            class="text-[11px] font-bold text-green-lt tracking-widest6 uppercase inline-block mt-[6px]">Info
+                            &amp; Daftar →</a>
+                    </div>
+                </div>
+                <div
+                    class="bg-dark border border-border rounded flex gap-4 items-start p-[18px] transition-all duration-300 hover:border-green hover:-translate-y-0.5">
+                    <div class="bg-surface rounded-[3px] px-3 py-2 text-center min-w-[50px]">
+                        <div class="font-display text-[22px] text-green-lt leading-none tracking-widest11">22</div>
+                        <div class="text-[9px] font-bold text-muted tracking-widest4 uppercase">JUN</div>
+                    </div>
+                    <div>
+                        <h4 class="text-[14px] font-semibold mb-1 text-white">Nobar &amp; Diskusi Film Dokumenter</h4>
+                        <p class="text-[11px] text-muted">Online via Zoom · 19.00 WIB</p>
+                        <a href="#"
+                            class="text-[11px] font-bold text-green-lt tracking-widest6 uppercase inline-block mt-[6px]">Info
+                            &amp; Daftar →</a>
+                    </div>
+                </div>
+                <div
+                    class="bg-dark border border-border rounded flex gap-4 items-start p-[18px] transition-all duration-300 hover:border-green hover:-translate-y-0.5">
+                    <div class="bg-surface rounded-[3px] px-3 py-2 text-center min-w-[50px]">
+                        <div class="font-display text-[22px] text-green-lt leading-none tracking-widest11">05</div>
+                        <div class="text-[9px] font-bold text-muted tracking-widest4 uppercase">JUL</div>
+                    </div>
+                    <div>
+                        <h4 class="text-[14px] font-semibold mb-1 text-white">Pelatihan Dasar Sinematografi</h4>
+                        <p class="text-[11px] text-muted">Terbuka untuk Mahasiswa Baru IPB</p>
+                        <a href="#"
+                            class="text-[11px] font-bold text-green-lt tracking-widest6 uppercase inline-block mt-[6px]">Info
+                            &amp; Daftar →</a>
+                    </div>
+                </div>
+                <div
+                    class="bg-dark border border-border rounded flex gap-4 items-start p-[18px] transition-all duration-300 hover:border-green hover:-translate-y-0.5">
+                    <div class="bg-surface rounded-[3px] px-3 py-2 text-center min-w-[50px]">
+                        <div class="font-display text-[22px] text-green-lt leading-none tracking-widest11">19</div>
+                        <div class="text-[9px] font-bold text-muted tracking-widest4 uppercase">JUL</div>
+                    </div>
+                    <div>
+                        <h4 class="text-[14px] font-semibold mb-1 text-white">Screening Night: Karya Terbaik 2024</h4>
+                        <p class="text-[11px] text-muted">Taman Koleksi IPB · 18.30 WIB</p>
+                        <a href="#"
+                            class="text-[11px] font-bold text-green-lt tracking-widest6 uppercase inline-block mt-[6px]">Info
+                            &amp; Daftar →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+     JOIN US / CTA
+══════════════════════════════════════════ -->
+    <section class="cta-section relative bg-black overflow-hidden py-[90px] text-center" id="join-us">
+        <div class="max-w-[1240px] mx-auto px-10 max-md:px-5 relative z-[1]">
+            <p class="text-[10px] font-bold tracking-widest2 uppercase text-green-lt mb-[10px] text-center">Bergabung
+            </p>
+            <h2 class="font-display uppercase leading-none tracking-widest10 mb-5"
+                style="font-size:clamp(44px,6vw,80px);">
+                Jadilah Bagian dari<br /><span class="text-green-lt">Agrimovie</span>
+            </h2>
+            <p class="text-[16px] font-light text-subtle max-w-[500px] mx-auto mb-10 leading-[1.7]">Wujudkan passion
+                film-mu bersama kami. Terbuka untuk seluruh mahasiswa Sekolah Vokasi IPB yang ingin berkarya dan berkreasi.</p>
+            <div class="flex justify-center gap-4 flex-wrap mb-12 max-sm:flex-col max-sm:items-center">
+                <a href="mailto:agrimovie@apps.ipb.ac.id"
+                    class="inline-flex items-center gap-2 font-body text-[13px] font-bold tracking-widest6 uppercase px-7 py-[13px] rounded-[3px] bg-green text-white hover:bg-green-lt hover:-translate-y-0.5 hover:shadow-green-btn transition-all duration-300">Form
+                    Pendaftaran</a>
+                <a href="#"
+                    class="inline-flex items-center gap-2 font-body text-[13px] font-bold tracking-widest6 uppercase px-7 py-[13px] rounded-[3px] bg-transparent text-white border-[1.5px] border-white/35 hover:border-green hover:text-green-lt hover:-translate-y-0.5 transition-all duration-300">WhatsApp
+                    Kami</a>
+            </div>
+            <div class="flex justify-center gap-3">
+                <a href="#"
+                    class="w-10 h-10 rounded-full bg-surface border border-border flex items-center justify-center text-subtle hover:bg-green hover:text-white hover:border-green hover:-translate-y-[3px] transition-all duration-300"
+                    aria-label="Instagram">
+                    <img src="../assets/img/IG.jpg" alt="IG" style="height:20px;width:auto;filter:brightness(0.85);" />
+                </a>
+                <a href="#"
+                    class="w-10 h-10 rounded-full bg-surface border border-border flex items-center justify-center text-subtle hover:bg-green hover:text-white hover:border-green hover:-translate-y-[3px] transition-all duration-300"
+                    aria-label="YouTube">
+                    <img src="../assets/img/YT.png" alt="YT" style="height:20px;width:auto;filter:brightness(0.85);" />
+                </a>
+                <a href="#"
+                    class="w-10 h-10 rounded-full bg-surface border border-border flex items-center justify-center text-subtle hover:bg-green hover:text-white hover:border-green hover:-translate-y-[3px] transition-all duration-300"
+                    aria-label="TikTok">
+                    <img src="../assets/img/TT.jpg" alt="TT" style="height:20px;width:auto;filter:brightness(0.85);" />
+                </a>
+                <a href="#"
+                    class="w-10 h-10 rounded-full bg-surface border border-border flex items-center justify-center text-subtle hover:bg-green hover:text-white hover:border-green hover:-translate-y-[3px] transition-all duration-300"
+                    aria-label="WhatsApp">
+                    <img src="../assets/img/WA.jpg" alt="WA" style="height:20px;width:auto;filter:brightness(0.85);" />
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer  -->
+    <div id="footer"></div>
+
+    <!-- js -->
+    <script>
+        window.onload = function() {
+
+            const cards = document.querySelectorAll('.film-grid')
+            cards.forEach(card => {
+                    card.style.display = (card.dataset.genre === 'film') ? '' : 'none';
+                });
+        };
+        function filterFilm(btn, genre) {
+            document.querySelectorAll('[onclick^="filterFilm"]').forEach(b => {
+                b.className = 'inline-flex items-center gap-2 font-body text-[11px] font-bold tracking-widest6 uppercase px-[18px] py-2 rounded-[3px] cursor-pointer bg-dark2 text-white border-[1.5px] border-border hover:border-green hover:text-green-lt transition-all duration-300';
+            });
+            btn.className = 'inline-flex items-center gap-2 font-body text-[11px] font-bold tracking-widest6 uppercase px-[18px] py-2 rounded-[3px] cursor-pointer bg-green text-white hover:bg-green-lt hover:-translate-y-0.5 hover:shadow-green-btn transition-all duration-300';
+
+            const cards = document.querySelectorAll('.film-grid');
+            cards.forEach(card => {
+                card.style.display = ( card.dataset.genre === genre) ? '' : 'none';
+            });
+        }
+    </script>
+</body>
+
+</html>
