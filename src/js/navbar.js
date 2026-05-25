@@ -6,6 +6,7 @@ export function navbar() {
 
   const path = window.location.pathname.split("/").pop() || "index.html";
   const active = (pageName) => {
+    console.log(pageName, path)
     return pageName.includes(path) 
     ? "text-green-lt underline underline-offset-4" 
     : "text-white/75 bg-transparent";
