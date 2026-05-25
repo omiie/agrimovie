@@ -12,6 +12,7 @@ export function navbar() {
     };
     const activeSub = (pageName) =>{
       console.log(pageName, path)
+      console.log(pageName.includes(path))
     return pageName.includes(path) 
     ? "text-green-lt " 
     : "text-subtle hover:text-white";
