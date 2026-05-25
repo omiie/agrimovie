@@ -1,9 +1,8 @@
 export function strip() {
-  const strip = document.getElementById('strip');
+  const strip = document.getElementById("strip");
   if (!strip) return;
 
-
-    strip.innerHTML =`
+  strip.innerHTML = `
     <div class="flex gap-[5px] py-[5px] bg-black overflow-hidden" id="film-strip-top" aria-hidden="true"></div>
 
     <div
@@ -14,12 +13,12 @@ export function strip() {
             <span>Bogor, Jawa Barat</span>
         </div>
         <div class="flex gap-[18px] items-center">
-            <span>agrimovie@apps.ipb.ac.id</span>
+            <span>agrimovieipb@gmail.com</span>
             <span>·</span>
-            <a href="#" class="hover:text-green-lt transition-colors duration-300">Instagram</a>
-            <a href="#" class="hover:text-green-lt transition-colors duration-300">YouTube</a>
-            <a href="#" class="hover:text-green-lt transition-colors duration-300">TikTok</a>
+            <a href="https://www.instagram.com/agrimovie/" class="hover:text-green-lt transition-colors duration-300">Instagram</a>
+            <a href="https://www.youtube.com/@agrimoviesvipb" class="hover:text-green-lt transition-colors duration-300">YouTube</a>
+            <a href="https://www.tiktok.com/@agrimoviesvipb" class="hover:text-green-lt transition-colors duration-300">TikTok</a>
         </div>
     </div>
-    `
+    `;
 }
